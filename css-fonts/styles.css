@@ -1,16 +1,16 @@
 * {
-  font-family: "Poppins", sans-serif;
   line-height: 150%;
 }
 
 h1 {
-  font-weight: 800;
+  font-family: "Lobster", serif;
 }
 
 h2 {
-  font-weight: 500;
+  font-family: "Karla", sans-serif;
+  font-style: bold;
 }
 
 p {
-  font-weight: 300;
+  font-family: "Karla", sans-serif;
 }
