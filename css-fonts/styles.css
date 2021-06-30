@@ -1,0 +1,16 @@
+* {
+  line-height: 150%;
+}
+
+h1 {
+  font-family: "Lobster", serif;
+}
+
+h2 {
+  font-family: "Karla", sans-serif;
+  font-style: bold;
+}
+
+p {
+  font-family: "Karla", sans-serif;
+}
