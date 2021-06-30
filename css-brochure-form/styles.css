@@ -1,0 +1,74 @@
+.container {
+  font-family: "Brandon Grotesque", sans-serif;
+  max-width: 500px;
+  box-sizing: border-box;
+  padding: 50px;
+}
+
+.form-title {
+  font-size: 1em;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ee716c;
+  letter-spacing: 1px;
+}
+
+.labelandinput {
+  font-family: "Brandon Grotesque", sans-serif;
+  font-size: 0.7em;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  width: 100%;
+}
+
+label {
+  padding-left: 12px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid  #bcc0bf;
+}
+
+input::placeholder {
+  font-family: "AtlasGrotesk", sans-serif;
+  font-size: 1.3em;
+  color: #bcc0bf;
+}
+
+select {
+  background-color: #f3f3f3;
+}
+
+option {
+  font-family: "Brandon Grotesque", sans-serif;
+}
+
+.right-align-button {
+  text-align: right;
+}
+
+.submit-button {
+  font-family: "Brandon Grotesque", sans-serif;
+  font-weight: 500;
+  font-size: 0.9em;
+  background-color: #ee716c;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  width: fit-content;
+  border-radius: 100px;
+  padding: 6px 20px 6px 20px;
+}
+
+.submit-button:hover {
+  background-color: #c04541;
+}
