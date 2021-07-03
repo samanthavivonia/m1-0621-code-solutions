@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  background-color: #1b96d9;
+  padding: 100px 200px;
+}
+
+.row {
+  display: flex;
+  margin: 20px;
+}
+
+.col-third {
+  width: calc(100% / 3);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.img-circle {
+  background-color: white;
+  border-radius: 1000px;
+  margin: 0 90px;
+  padding: 10%;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h4,
+p {
+  font-family: "Lato", sans-serif;
+  color: white;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+
+h4 {
+  font-size: 1.3em;
+  margin: 15px 0;
+}
+
+p {
+  color: lightgray;
+  font-size: 0.9em;
+}
