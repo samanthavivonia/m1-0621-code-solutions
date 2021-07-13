@@ -1,6 +1,8 @@
-.row {
+.row,
+.section {
   width: 100%;
   display: flex;
+  justify-content: center;
 }
 
 .col-6 {
@@ -15,7 +17,7 @@ p,
 a {
   font-family: "Avenir", sans-serif;
   text-decoration: none;
-  font-size: 0.7em;
+  font-size: 0.9em;
   margin: 5px;
   line-height: 1.6em;
 }
@@ -37,7 +39,7 @@ img {
 
 .logo {
   display: flex;
-  width: 6em;
+  width: 8em;
   align-items: center;
 }
 
@@ -50,47 +52,91 @@ button {
   padding: 0.5em 1em;
   width: fit-content;
   height: fit-content;
-  font-size: 0.7em;
+  font-size: 0.9em;
+}
+
+button:hover {
+  background-color: #192a3f;
+  transition: 300ms;
+}
+
+.constrained {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.more-constrained {
+  width: 100%;
+  max-width: 600px;
 }
 
 /* HEADER */
 
-.header {
+.header.section {
+  background-color: white;
+  border-bottom: rgb(230, 230, 230) solid 1px;
+}
+
+.header > .constrained {
+  display: flex;
   justify-content: space-between;
   padding: 1em 2.5em;
-  border-bottom: rgb(230, 230, 230) solid 1px;
 }
 
 .nav-links {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 22em;
+  width: 30em;
 }
 
 .nav-links > a {
   color: gray;
 }
 
+.nav-links > a:hover {
+  color: #2a4463;
+  text-decoration: underline;
+  transition: 300ms;
+}
+
+a.active-link {
+  font-weight: bold;
+  color: #2a4463;
+}
+
 /* BANNER */
 
-.banner {
-  background-image: linear-gradient(rgba(110, 110, 110, 0.4), rgba(110, 110, 110, 0.4)), url(images/hero.jpg);
+.banner.section {
+  background-color: white;
+  justify-content: center;
+}
+
+.banner > .constrained {
+  display: flex;
+  align-items: center;
   height: 50%;
   background-position: right;
   background-repeat: none;
   background-size: cover;
   position: relative;
   color: white;
-  margin: 2.5em;
-  width: calc(100% - 5em);
+  border: 2.5em solid white;
 }
 
-.banner-img {
-  background-image: url(images/hero.jpg);
-  background-size: cover;
-  position: absolute;
-  margin: 0;
+.home.banner > .constrained {
+  background-image: linear-gradient(rgba(110, 110, 110, 0.4), rgba(110, 110, 110, 0.4)), url(images/hero.jpg);
+  min-height: 30em;
+}
+
+.product.banner > .constrained {
+  background-image: linear-gradient(rgba(110, 110, 110, 0.4), rgba(110, 110, 110, 0.4)), url(images/product/product-header.jpg);
+  min-height: 30em;
+}
+
+.implementation.banner > .constrained {
+  background-image: linear-gradient(rgba(110, 110, 110, 0.4), rgba(110, 110, 110, 0.4)), url(images/implementation/implementation-header.jpg);
+  min-height: 30em;
 }
 
 .banner-content {
@@ -107,12 +153,15 @@ button {
 
 /* INFO */
 
-.info {
+.info.section {
   background-color: #fafafa;
+  border-bottom: rgb(230, 230, 230) solid 1px;
+}
+
+.info > .constrained {
+  color: #6d6d6d;
   flex-direction: column;
   padding: 2.5em;
-  color: #6d6d6d;
-  border-bottom: rgb(230, 230, 230) solid 1px;
 }
 
 .info-header {
@@ -125,13 +174,65 @@ button {
 
 .locations > p {
   text-align: center;
-  font-size: 0.8em;
+  font-size: 1em;
   margin: 0.8em;
+}
+
+/* PRODUCT INFO */
+
+.product-info.section {
+  background-color: #F8F9FA;
+  border-bottom: rgb(230, 230, 230) solid 1px;
+}
+
+.product-info > .constrained {
+  color: #6d6d6d;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-info .col-6 {
+  margin: 2.5em;
+}
+
+.product-2.product-info.section {
+  background-color: white;
+}
+
+/* CALCULATE ROI */
+
+.roi.section {
+  background-color: white;
+  border-bottom: rgb(230, 230, 230) solid 1px;
+}
+
+.roi > .more-constrained {
+  color: #6d6d6d;
+}
+
+.roi-step {
+  margin: 2em;
+}
+
+.roi h2 {
+  text-align: center;
+  margin: 2em 0;
+}
+
+.roi h6 {
+  font-family: "Avenir", sans-serif;
+  font-size: 1.1em;
 }
 
 /* CTA */
 
-.cta {
+.cta.section {
+  background-color: white;
+}
+
+.cta > .constrained {
   justify-content: space-between;
   align-items: center;
   padding: 1.5em 2.5em;
@@ -156,12 +257,12 @@ button {
 .footer-1 p {
   margin: 0;
   color: white;
-  font-size: 0.6em;
+  font-size: 0.8em;
 }
 
 .footer-1 h5 {
   font-family: "Avenir", sans-serif;
-  font-size: 0.8em;
+  font-size: 1em;
   color: white;
   text-transform: uppercase;
 }
@@ -171,6 +272,11 @@ button {
   color: white;
 }
 
+.footer-1 a:hover {
+  text-decoration: underline;
+  transition: 300ms;
+}
+
 .footer-2 {
   background-color: #ebebeb;
   padding: 1em 2.5em;
@@ -178,4 +284,9 @@ button {
 
 .footer-2 a {
   color: #6d6d6d;
+}
+
+.footer-2 a:hover {
+  text-decoration: underline;
+  transition: 300ms;
 }
