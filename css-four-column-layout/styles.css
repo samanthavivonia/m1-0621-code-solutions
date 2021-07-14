@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f7f8fa;
+  font-family: "Barlow", sans-serif;
+  padding: 0 5em;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-3 {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 15em;
+}
+
+img {
+  width: 100%;
+}
+
+.icon {
+  width: 4em;
+}
+
+h5 {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+}
