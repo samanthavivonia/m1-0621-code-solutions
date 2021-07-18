@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.col-fifth {
+  width: calc(100% / 5);
+  margin: 1.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+img {
+  width: 100%;
+  height: 30em;
+  object-fit: cover;
+}
+
+.desc-1 {
+  margin: 1em 0;
+}
+
+h4 {
+  display: inline-block;
+  font-size: 1.5em;
+  margin: 0 0.5em 0 0;
+}
+
+.muted {
+  color: lightgray;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.price {
+  background-color: #fceee3;
+  border-radius: 5;
+  padding: 0.1em;
+}
