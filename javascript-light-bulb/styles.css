@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.dark {
+  background-color: black;
+  transition: 1s;
+}
+
+.light {
+  background-color: #fef9f1;
+  transition: 1s;
+}
+
+.circle {
+  width: 15em;
+  height: 15em;
+  border-radius: 100em;
+}
+
+.off {
+  background-color: #252525;
+  transition: 1s;
+}
+
+.on {
+  background-color: #fae984;
+  box-shadow: 0 0 3em #fae984;
+  transition: 1s;
+}
