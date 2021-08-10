@@ -9,4 +9,6 @@ $form.addEventListener('submit', function (event) {
   $submittedForm.message = $form.elements.message.value;
 
   console.log('Submitted Form Object: ', $submittedForm);
+
+  $form.reset();
 });
